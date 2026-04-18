@@ -1,0 +1,93 @@
+{
+  "analysis_date": "2026-04-18",
+  "dataset": "UCI Online Retail",
+  "data_quality": {
+    "missing_customer_id": 135080,
+    "cancelled_orders": 8905,
+    "invalid_quantity": 0,
+    "invalid_price": 40,
+    "non_product_codes": 1414,
+    "original_rows": 541909,
+    "final_rows": 396470,
+    "rows_removed": 145439,
+    "pct_retained": 73.2
+  },
+  "customer_overview": {
+    "total_customers": 4334,
+    "total_revenue_gbp": 8767752.65,
+    "total_orders": 18405,
+    "date_range_start": "2010-12-01",
+    "date_range_end": "2011-12-09",
+    "countries": 37
+  },
+  "rfm_stats": {
+    "avg_recency_days": 92.7,
+    "avg_frequency": 4.2,
+    "avg_monetary_gbp": 2023.02,
+    "median_monetary_gbp": 668.12
+  },
+  "segments": {
+    "Champions": {
+      "count": 1136,
+      "pct_customers": 26.2,
+      "avg_monetary": 5146.89,
+      "pct_revenue": 66.7
+    },
+    "Loyal Customers": {
+      "count": 827,
+      "pct_customers": 19.1,
+      "avg_monetary": 1595.26,
+      "pct_revenue": 15.0
+    },
+    "At Risk": {
+      "count": 637,
+      "pct_customers": 14.7,
+      "avg_monetary": 1234.27,
+      "pct_revenue": 9.0
+    },
+    "Need Attention": {
+      "count": 507,
+      "pct_customers": 11.7,
+      "avg_monetary": 421.45,
+      "pct_revenue": 2.4
+    },
+    "Lost": {
+      "count": 362,
+      "pct_customers": 8.4,
+      "avg_monetary": 566.65,
+      "pct_revenue": 2.3
+    },
+    "Hibernating": {
+      "count": 364,
+      "pct_customers": 8.4,
+      "avg_monetary": 456.47,
+      "pct_revenue": 1.9
+    },
+    "Recent Customers": {
+      "count": 319,
+      "pct_customers": 7.4,
+      "avg_monetary": 449.92,
+      "pct_revenue": 1.6
+    },
+    "Potential Loyalists": {
+      "count": 182,
+      "pct_customers": 4.2,
+      "avg_monetary": 477.43,
+      "pct_revenue": 1.0
+    }
+  },
+  "clustering": {
+    "optimal_k": 4,
+    "silhouette_score": 0.3375,
+    "davies_bouldin": 1.0159
+  },
+  "clv": {
+    "avg_clv_discounted_gbp": 5030.94,
+    "median_clv_discounted_gbp": 1661.53,
+    "total_portfolio_clv_gbp": 21804103.13,
+    "assumptions": {
+      "lifespan_years": 3,
+      "discount_rate_pct": 10
+    }
+  }
+}
